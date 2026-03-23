@@ -1,3 +1,3 @@
-remote_theme: alshedivat/al-folio
+remote_theme: academicpages/academicpages.github.io
 plugins:
   - jekyll-remote-theme
