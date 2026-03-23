@@ -1,0 +1,6 @@
+remote_theme: academicpages/academicpages.github.io
+plugins:
+  - jekyll-remote-theme
+
+title: Your Name
+description: Aerospace Engineer | Spacecraft Propulsion
