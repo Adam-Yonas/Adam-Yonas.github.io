@@ -1,6 +1,3 @@
 remote_theme: alshedivat/al-folio
 plugins:
   - jekyll-remote-theme
-
-title: Adam Yonas
-description: Aerospace Engineer | Spacecraft Propulsion
