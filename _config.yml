@@ -2,5 +2,5 @@ remote_theme: academicpages/academicpages.github.io
 plugins:
   - jekyll-remote-theme
 
-title: Your Name
+title: Adam Yonas
 description: Aerospace Engineer | Spacecraft Propulsion
