@@ -1,4 +1,7 @@
-theme: jekyll-theme-minimal
+remote_theme: academicpages/academicpages.github.io
+plugins:
+  - jekyll-remote-theme
+
 # Basic writing and formatting syntax
 
 Create sophisticated formatting for your prose and code on GitHub with simple syntax.
