@@ -1,57 +1,67 @@
 # Adam Yonas  
-Aerospace Engineer | Spacecraft Propulsion | Systems Design  
+### Aerospace Engineer | Spacecraft Propulsion | Systems Design  
 
 📍 U.S. Citizen  
 📧 adamyonaswon@gmail.com  
-🔗 https://www.linkedin.com/in/adam-yonas-8a1315198/  
+🔗 [LinkedIn](https://www.linkedin.com/in/adam-yonas-8a1315198/)  
+📄 [Resume](./Adam_Yonas_Aerospace_Engineer_2026.pdf)  
 
 ---
 
-## 🚀 About Me  
-I am an aerospace engineer focused on spacecraft propulsion, systems integration, and mission design. My work spans CubeSat development, electric propulsion research, and full-cycle hardware testing from design through flight validation.  
+## 🚀 Overview  
+Aerospace engineer specializing in spacecraft propulsion, systems integration, and mission design.  
 
-I have led multiple space systems projects, including hardware deployed to the ISS, and conducted research on plume-surface interactions for electrospray propulsion systems. My interests are centered on propulsion performance, spacecraft reliability, and scalable space systems.
+Led development of flight hardware deployed to the ISS and conducted research in electric propulsion plume-surface interactions. Experienced in full-cycle engineering from design and simulation to manufacturing, testing, and flight validation.
 
 ---
 
-## 🛰️ Key Projects  
+## 🛰️ Selected Projects  
 
-### Alpha CubeSat & ISS Payload Systems  
-- Led end-to-end development of a 1U CubeSat from CAD and FEA through assembly and environmental testing  
-- Hardware launched aboard Cygnus and deployed from the ISS  
-- Designed deployment systems and validated performance under simulated microgravity  
+### Alpha CubeSat (ISS Deployment)  
+- Led end-to-end development of a 1U CubeSat mission  
+- Performed CAD, FEA, assembly, and environmental testing  
+- Launched aboard Cygnus and deployed from the ISS  
+
+---
+
+### Sailing to the Stars (ISS Payload)  
+- Mechanical lead for light sail deployer systems tested aboard the ISS  
+- Designed single- and double-door deployment mechanisms using nitinol structures  
+- Integrated mechanical systems with avionics and control subsystems  
+
+---
 
 ### DeSCENT ChipSat Deployer  
-- Designed and fabricated burn-wire actuated deployer system  
+- Designed burn-wire actuated deployer system  
 - Achieved ~4 m/s deployment velocity at 100 km  
 - Integrated mechanical, electrical, and control subsystems  
 
-### Sailing to the Stars (ISS Demonstration Payload)  
-- Mechanical lead for light sail deployer systems tested aboard the ISS  
-- Designed single- and double-door deployment mechanisms using nitinol structures  
-- Coordinated system integration across avionics and mechanical subsystems  
+---
 
 ### Mars Rover Suspension System  
 - Designed rocker-bogie suspension for all-terrain traversal  
-- Performed FEA and hand calculations for 600 N loading and 25 mm deflection limits  
-- Manufactured and assembled components using CNC machining and composite materials  
+- Validated 600 N load capacity and 25 mm deflection using FEA and hand calculations  
+- Manufactured and assembled components via CNC machining  
 
 ---
 
 ## 🔬 Research & Publications  
 
-### Electric Propulsion & Plume-Surface Interactions  
-- Simulated ion impacts (10–1000 eV) using LAMMPS and MATLAB  
-- Modeled EMI-BF4 fragmentation and surface erosion effects  
-- Supported electrospray propulsion testing in vacuum environments  
+### Electric Propulsion  
 
-Presented at:  
-- AIAA SciTech Forum (2023)  
+- [Investigating the Chemical Stability of Electrospray Plumes during Particle Collisions](https://arc.aiaa.org/doi/full/10.2514/1.B39118)  
+  - Cornell ASTRA Lab  
+  - LAMMPS simulations of ion plume interactions (10–1000 eV)  
+  - Modeled EMI-BF4 fragmentation and plume-induced surface erosion  
 
-### SmallSat Mission Design (SMDS)  
-- Designed power subsystem for solar sail mission (Zodiacal Light imaging)  
-- Developed solar array and battery architecture (28.9 Wh peak, 25 Wh capacity)  
-- Presented mission concept at AIAA ASCEND Conference  
+---
+
+### SmallSat Mission Design  
+
+- [SIZLE: SmallSat to Image Zodiacal Light Above Ecliptic](https://arc.aiaa.org/doi/abs/10.2514/6.2023-4782)  
+  - AIAA ASCEND Conference  
+  - Designed power subsystem with 28.9 Wh peak output and 25 Wh capacity  
+  - Developed system-level power budgets across mission modes  
 
 ---
 
@@ -59,39 +69,31 @@ Presented at:
 
 ### Space Systems Design Studio (SSDS)  
 - Mechanical and systems lead across multiple CubeSat missions  
-- Developed deployment systems, manufacturing documentation, and test procedures  
+- Developed deployment systems, GD&T drawings, and manufacturing workflows  
 - Executed environmental and functional testing for flight validation  
 
+---
+
 ### AVS US – Spacecraft Subsystems Engineer  
-- Conducted TVAC testing of cold gas propulsion systems (10⁻⁴ Torr, -40°C to 70°C)  
+- Conducted TVAC testing of cold gas propulsion systems  
 - Designed and fabricated precision test fixtures  
 - Authored GEVS-compliant test documentation  
 
+---
+
 ### Progeny Systems – Mechanical Engineer  
-- Designed hybrid drone/submersible components  
+- Designed hybrid drone/submersible systems  
 - Performed structural and fluid simulations in ANSYS  
 - Supported system-level design trade studies  
 
 ---
 
-## 🛠️ Skills  
+## 🛠️ Technical Skills  
 
-**Engineering:**  
-CAD (Fusion 360, Inventor, SOLIDWORKS), GD&T, DFMA, DFMEA  
-
-**Simulation & Analysis:**  
-ANSYS (Mechanical, Maxwell), MATLAB, Simulink, LAMMPS  
-
-**Manufacturing:**  
-CNC machining, 3D printing, soldering, lathe, mill  
-
-**Programming:**  
-Python, MATLAB, Java, Linux  
-
----
-
-## 📄 Resume  
-[Download Resume](./Adam_Yonas_Aerospace_Engineer_2026.pdf)
+**Engineering:** CAD (Fusion 360, Inventor, SOLIDWORKS), GD&T, DFMA, DFMEA  
+**Simulation:** ANSYS, MATLAB, Simulink, LAMMPS  
+**Manufacturing:** CNC machining, 3D printing, soldering  
+**Programming:** Python, MATLAB, Java, Linux  
 
 ---
 
