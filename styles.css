@@ -344,3 +344,35 @@ footer {
     font-size: 2.6rem;
   }
 }
+
+/* ===== AVS background panel ===== */
+.avs-bg {
+  position: relative;
+  overflow: hidden;
+  background: #111;
+
+  background-image: url('../images/avs-logo.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 160px;
+}
+
+/* dark overlay so text is readable */
+.avs-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.85);
+  z-index: 0;
+}
+
+/* keep content above overlay */
+.avs-bg * {
+  position: relative;
+  z-index: 1;
+}
+
+/* optional: soften the logo further */
+.avs-bg {
+  filter: saturate(0.8);
+}
