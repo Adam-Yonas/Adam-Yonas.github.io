@@ -344,14 +344,3 @@ footer {
     font-size: 2.6rem;
   }
 }
-
-.avs-bg {
-  position: relative;
-  overflow: hidden;
-  background:
-    linear-gradient(rgba(10, 14, 26, 0.88), rgba(10, 14, 26, 0.88)),
-    url("../images/avs-bg.png");
-  background-repeat: no-repeat;
-  background-position: right 24px center;
-  background-size: 220px auto;
-}
