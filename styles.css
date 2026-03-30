@@ -345,37 +345,41 @@ footer {
   }
 }
 
-/*skill section*/
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
+/* group spacing */
 .skill-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
+  margin-bottom: 1rem;
 }
 
-.skill-label {
-  display: block;
-}
-
-.chip-row {
+/* subskill container */
+.subchips {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
 }
 
-.chip.category {
-  display: inline-flex;
-  width: fit-content;
+/* MAIN skill (highlighted) */
+.chip.main {
+  display: inline-block;
   font-weight: 600;
-  letter-spacing: 0.04em;
   background: rgba(120, 180, 255, 0.15);
   color: #8fc8ff;
   border: 1px solid rgba(120, 180, 255, 0.3);
+}
+
+/* SUB skills */
+.chip.sub {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+}
+
+.chip.main {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 
 /* DEGREES — more prominent */
@@ -403,40 +407,27 @@ footer {
 /* profile photo in about me*/
 .about-hero {
   display: grid;
-  grid-template-columns: 3fr 1fr; /* text bigger, image smaller */
+  grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
   align-items: center;
 }
 
-/* control image size */
 .about-photo img {
   width: 100%;
-  max-width: 220px;   /* THIS makes it smaller */
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
-}
-
-/* keep image aligned nicely */
-.about-photo {
-  display: flex;
-  justify-content: center;
-}
-
-.about-photo img {
-  max-width: 200px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 768px) {
   .about-hero {
     grid-template-columns: 1fr;
   }
-
-  .about-photo img {
-    max-width: 180px;
-    margin: 0 auto;
-  }
 }
 
+.about-photo img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
