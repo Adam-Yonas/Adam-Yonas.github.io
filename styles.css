@@ -439,7 +439,7 @@ footer {
   }
 
   .avs-card {
-    grid-template-columns: 1.6fr 340px;
+    grid-template-columns: 1.6fr 600px;
   }
   
   .avs-image {
