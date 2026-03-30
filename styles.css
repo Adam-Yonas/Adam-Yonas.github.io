@@ -407,29 +407,40 @@ footer {
 /* profile photo in about me*/
 .about-hero {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr; /* text bigger, image smaller */
   gap: 1.5rem;
   align-items: center;
 }
 
+/* control image size */
 .about-photo img {
   width: 100%;
-  border-radius: 16px;
+  max-width: 220px;   /* THIS makes it smaller */
+  border-radius: 12px;
   object-fit: cover;
+}
+
+/* keep image aligned nicely */
+.about-photo {
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo img {
+  max-width: 200px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 @media (max-width: 768px) {
   .about-hero {
     grid-template-columns: 1fr;
   }
-}
 
-.about-photo img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  .about-photo img {
+    max-width: 180px;
+    margin: 0 auto;
+  }
 }
-
 
