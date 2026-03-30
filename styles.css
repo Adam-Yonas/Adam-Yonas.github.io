@@ -344,3 +344,41 @@ footer {
     font-size: 2.6rem;
   }
 }
+
+/* group spacing */
+.skill-group {
+  margin-bottom: 1rem;
+}
+
+/* subskill container */
+.subchips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+}
+
+/* MAIN skill (highlighted) */
+.chip.main {
+  display: inline-block;
+  font-weight: 600;
+  background: rgba(120, 180, 255, 0.15);
+  color: #8fc8ff;
+  border: 1px solid rgba(120, 180, 255, 0.3);
+}
+
+/* SUB skills */
+.chip.sub {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+}
+
+/* optional: bullet-style alignment */
+.skill-group::before {
+  content: "•";
+  color: #8fc8ff;
+  margin-right: 0.5rem;
+}
