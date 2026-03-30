@@ -435,11 +435,11 @@ footer {
   }
 
   .about-photo img {
-    max-width: 190px;
+    max-width: 300px;
   }
 
   .avs-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1.6fr 340px;
   }
   
   .avs-image {
