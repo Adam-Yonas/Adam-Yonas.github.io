@@ -381,3 +381,25 @@ footer {
   text-transform: uppercase;
   font-size: 0.8rem;
 }
+
+/* DEGREES — more prominent */
+.chip.degree {
+  background: rgba(120, 255, 180, 0.12);
+  color: #9fffc8;
+  border: 1px solid rgba(120, 255, 180, 0.3);
+  font-weight: 500;
+}
+
+/* COURSEWORK — lighter */
+.coursework .chip {
+  background: rgba(255, 255, 255, 0.04);
+  color: #aaa;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.8rem;
+}
+
+/* spacing between sections */
+.degree-row {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
