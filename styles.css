@@ -382,3 +382,9 @@ footer {
   color: #8fc8ff;
   margin-right: 0.5rem;
 }
+
+.chip.main {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
