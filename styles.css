@@ -376,13 +376,6 @@ footer {
   font-size: 0.85rem;
 }
 
-/* optional: bullet-style alignment */
-.skill-group::before {
-  content: "•";
-  color: #8fc8ff;
-  margin-right: 0.5rem;
-}
-
 .chip.main {
   letter-spacing: 0.05em;
   text-transform: uppercase;
