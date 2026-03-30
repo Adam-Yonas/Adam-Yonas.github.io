@@ -394,11 +394,16 @@ footer {
   color: var(--soft);
 }
 
+/* Reusable company / lab card layout */
 .company-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 220px;
   gap: 24px;
   align-items: center;
+}
+
+.company-content {
+  min-width: 0;
 }
 
 .company-image {
@@ -410,29 +415,16 @@ footer {
 }
 
 .company-image img {
+  display: block;
   width: auto;
   max-width: 160px;
   max-height: 100px;
+  height: auto;
   object-fit: contain;
+  opacity: 0.95;
 }
 
-@media (max-width: 980px) {
-  .hero-grid,
-  .about-hero,
-  .about-grid,
-  .contact-grid,
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .about-photo {
-    justify-content: flex-start;
-  }
-
-  .about-photo img {
-    max-width: 220px;
-  }
-
+@media (max-width: 700px) {
   .company-card {
     grid-template-columns: 1fr;
   }
@@ -447,29 +439,6 @@ footer {
   .company-image img {
     max-width: 140px;
     max-height: 90px;
-  }
-}
-
-  .about-photo {
-    justify-content: flex-start;
-  }
-
-  .about-photo img {
-    max-width: 220px;
-  }
-
-  .company-card {
-    grid-template-columns: 1fr;
-  }
-
-  .company-image {
-    border-left: none;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    padding-top: 18px;
-  }
-
-  .company-image img {
-    max-width: 180px;
   }
 }
 
