@@ -497,11 +497,11 @@ footer {
 }
 
 /*controls image size in subpages*/
-.section-image {
+img.section-image {
   display: block;
+  width: min(800px, 100%);
+  height: auto;
   margin: 0 auto 2rem auto;
-  width: 100%;
-  max-width: 900px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
