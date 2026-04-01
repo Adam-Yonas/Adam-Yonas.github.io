@@ -478,3 +478,8 @@ footer {
     width: 100%;
   }
 }
+
+/*makes subpages stack vertically*/
+.details-stack {
+  grid-template-columns: 1fr;
+}
