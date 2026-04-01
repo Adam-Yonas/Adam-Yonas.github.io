@@ -499,7 +499,7 @@ footer {
 /*controls image size in subpages*/
 .section-image {
   width: 100%;
-  max-width: 800px;   /* controls size */
+  max-width: 200px;   /* controls size */
   display: block;
   margin: 0 auto 1.5rem auto; /* centers + spacing */
   border-radius: 12px;
