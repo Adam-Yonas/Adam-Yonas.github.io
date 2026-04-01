@@ -16,7 +16,7 @@
       </div>
     </div>
   </nav>
-  
+
   <main>
     <section>
       <div class="container">
@@ -28,7 +28,8 @@
         <div class="panel">
           <div class="meta">ChipSat Deployment</div>
           <p>
-            DeSCENT was a burn-wire actuated ChipSat deployer developed for controlled deployment and systems integration.
+            DeSCENT is a ChipSat deployer developed through Cornell’s Space Systems Design Studio (SSDS) to 
+            enable controlled release of ultra-small spacecraft from a CubeSat platform.
           </p>
         </div>
       </div>
@@ -39,7 +40,10 @@
         <div class="panel">
           <div class="meta">Overview</div>
           <p>
-            Add the project objective, deployment concept, subsystem interfaces, and mission requirements.
+            DeSCENT is a ChipSat deployer developed through Cornell’s SSDS to enable controlled release of ultra-small spacecraft 
+            from a CubeSat platform. The system is designed to securely stow multiple ChipSats during launch and reliably deploy 
+            them on orbit, supporting SSDS’s broader efforts in distributed sensing and low-cost space systems. The project emphasizes 
+            simplicity, reliability, and compatibility with CubeSat integration and launch constraints.
           </p>
         </div>
 
@@ -65,22 +69,40 @@
         <div class="card-grid details-stack">
           <article class="card">
             <div class="meta">Design</div>
-            <p>Describe the burn-wire release mechanism, packaging, and deployer structure.</p>
+            <p>
+              The deployer was designed as a compact, self-contained mechanism capable of housing and releasing ChipSats in a controlled manner. 
+              The system uses a burn-wire actuated release mechanism paired with a spring-loaded deployment system to ensure separation from the 
+              host spacecraft. Design work focused on packaging within tight volume constraints, ensuring positive retention during launch, and 
+              achieving clean, repeatable deployment without interference or jamming.
+            </p>
           </article>
 
           <article class="card">
             <div class="meta">Analysis</div>
-            <p>Describe release requirements, spring behavior, and performance targets.</p>
+            <p>
+              Key analyses focused on ensuring the mechanism would survive launch loads and function reliably in space. This included evaluating
+              retention forces, spring sizing, and release timing to achieve consistent deployment velocities. Thermal and electrical considerations
+              were also addressed for the burn-wire system, ensuring reliable actuation after exposure to vibration and thermal vacuum environments.
+            </p>
           </article>
 
           <article class="card">
             <div class="meta">Manufacturing</div>
-            <p>Describe fabrication, assembly steps, and hardware iteration.</p>
+            <p>
+              The deployer was fabricated using a combination of machined components and rapid prototyping to enable fast iteration. Assembly 
+              required precise integration of mechanical components, springs, and the burn-wire system within a compact structure. Multiple 
+              iterations were produced to refine tolerances, improve reliability, and ensure consistent performance across builds.
+            </p>
           </article>
 
           <article class="card">
             <div class="meta">Testing / Results</div>
-            <p>Describe deployment testing, achieved performance, and final outcomes.</p>
+            <p>
+              DeSCENT was validated through functional and environmental testing, including repeated deployment tests to verify reliability 
+              and consistency. The burn-wire mechanism was characterized to ensure predictable actuation, and the system was tested under 
+              conditions representative of launch and space environments. Results demonstrated reliable ChipSat release and informed further 
+              design improvements for future iterations.
+            </p>
           </article>
         </div>
       </div>
