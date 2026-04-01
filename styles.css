@@ -498,9 +498,11 @@ footer {
 
 /*controls image size in subpages*/
 .section-image {
-  width: 100%;
-  max-width: 200px;   /* controls size */
   display: block;
-  margin: 0 auto 1.5rem auto; /* centers + spacing */
+  margin: 0 auto 2rem auto;
+  max-width: 500px;
+  width: 100%;
   border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  align-items: center;
 }
