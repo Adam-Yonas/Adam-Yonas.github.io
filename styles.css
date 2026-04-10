@@ -546,10 +546,16 @@ footer {
   padding: 8px 16px;
   background: rgba(255,255,255,0.08);
   border-radius: 8px;
-  text-decoration: none;
+  text-decoration: none;  /* no underline */
   font-size: 0.9rem;
+
+  color: white;           /* add this */
+  font-weight: 600;       /* bold */
 }
 
 .button-link:hover {
   background: rgba(255,255,255,0.15);
+  color: #ddd;            /* optional hover */
 }
+
+
