@@ -548,17 +548,15 @@ footer {
   border-radius: 8px;
   text-decoration: none;
   font-size: 0.9rem;
-
   color: white;
   font-weight: 600;
-  letter-spacing: 0.3px;
-  transition: 0.2s ease;
 }
 
-.button-link:hover {
-  background: rgba(255,255,255,0.15);
-  color: #fff;
-  transform: translateY(-1px); /* subtle lift */
+.button-link:hover,
+.button-link:visited,
+.button-link:focus {
+  color: white;
+  text-decoration: none;
 }
 
 
