@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DeSCENT | Adam Yonas</title>
-  <meta name="description" content="DeSCENT project by Adam Yonas." />
+  <title>DeSCENT Deployer | Adam Yonas</title>
+  <meta name="description" content="DeSCENT ChipSat deployer project by Adam Yonas." />
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
@@ -22,18 +22,26 @@
       <div class="container">
         <div class="section-title">
           <span>Project</span>
-          <h3>DeSCENT</h3>
+          <h3>DeSCENT Deployer</h3>
         </div>
 
         <div class="panel">
           <div class="meta">Space Systems Design Studio</div>
           <p>
-          Alpha CubeSat is a 1U spacecraft developed through Cornell’s Space Systems Design Studio (SSDS), 
-          a student-led program founded by Professor Mason Peck focused on rapid, flight-driven spacecraft development. 
-          The project serves as a platform for designing, building, and validating real flight hardware, with an emphasis 
-          on deployable systems and end-to-end spacecraft integration. Within SSDS, Alpha CubeSat contributes to a broader 
-          effort to develop low-cost, flight-ready technologies that can be tested in real space environments, including ISS deployment.     
+            DeSCENT (Demonstration of Suborbital ChipSats Ejected from New Shepard Test Flight) is a
+            ChipSat deployment mission developed through Cornell’s Space Systems Design Studio in collaboration
+            with Johns Hopkins University Applied Physics Laboratory. The project centers on a two-bay deployer
+            designed to house and eject 100 ChipSats from the JANUS platform aboard Blue Origin New Shepard
+            for suborbital atmospheric sensing and reentry testing.
           </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="image-center">
+          <img src="../images/descent-deployer-main.jpg" alt="DeSCENT deployer" class="section-image">
         </div>
       </div>
     </section>
@@ -43,20 +51,28 @@
         <div class="panel">
           <div class="meta">Overview</div>
           <p>
-            DeSCENT is a ChipSat deployer developed through Cornell’s SSDS to enable controlled release of ultra-small spacecraft 
-            from a CubeSat platform. The system is designed to securely stow multiple ChipSats during launch and reliably deploy 
-            them on orbit, supporting SSDS’s broader efforts in distributed sensing and low-cost space systems. The project emphasizes 
-            simplicity, reliability, and compatibility with CubeSat integration and launch constraints.
+            The DeSCENT deployer was designed to package, retain, and eject 100 ChipSats at apogee from the
+            JHU APL JANUS platform. The system uses a machined aluminum chassis with 3D-printed inserts,
+            spring-loaded launch bars, fishing-line retention, and a burn-wire circuit to execute a two-stage
+            deployment sequence: first opening the doors, then ejecting the ChipSats.
           </p>
+          <ul class="clean">
+            <li>Designed to deploy 100 ChipSats at 100 km apogee</li>
+            <li>Two internal bays holding 50 ChipSats each</li>
+            <li>Burn-wire triggered door release and ChipSat ejection</li>
+            <li>Integrated with the JHU APL JANUS payload platform</li>
+            <li>Targeted exit velocity of 2–4 m/s</li>
+          </ul>
         </div>
 
         <div class="panel">
           <div class="meta">My Role</div>
           <ul class="clean">
-            <li>Mechanical design and CAD</li>
-            <li>Deployment mechanism development</li>
-            <li>Fabrication and assembly</li>
-            <li>Integration with avionics and controls</li>
+            <li>Mechanical design and CAD for deployer hardware</li>
+            <li>Assembly, integration, and prototype refinement</li>
+            <li>Development of deployment mechanisms and packaging interfaces</li>
+            <li>Iteration on tolerancing, fishing-line routing, and test setup</li>
+            <li>Validation through repeated deployment testing</li>
           </ul>
         </div>
       </div>
@@ -66,47 +82,139 @@
       <div class="container">
         <div class="section-title">
           <span>Details</span>
-          <h3>Mechanism design, fabrication, and testing.</h3>
+          <h3>Design, integration, and validation.</h3>
         </div>
 
         <div class="card-grid details-stack">
           <article class="card">
-            <div class="meta">Design</div>
+            <div class="meta">Architecture</div>
             <p>
-              The deployer was designed as a compact, self-contained mechanism capable of housing and releasing ChipSats in a controlled manner. 
-              The system uses a burn-wire actuated release mechanism paired with a spring-loaded deployment system to ensure separation from the 
-              host spacecraft. Design work focused on packaging within tight volume constraints, ensuring positive retention during launch, and 
-              achieving clean, repeatable deployment without interference or jamming.
+              The deployer uses a machined aluminum primary structure with 3D-printed internal racks to organize
+              and constrain ChipSat motion. The system is split into two bays, each loaded with 50 ChipSats,
+              with top-mounted doors for retention and spring-loaded launch bars for ejection.
             </p>
+            <ul>
+              <li>Machined aluminum baseplate, end walls, side walls, and doors</li>
+              <li>3D-printed side and middle racks for ChipSat guidance</li>
+              <li>Two launch bars driven by internal compression springs</li>
+              <li>Designed around manufacturability and iterative refinement</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Analysis</div>
+            <div class="meta">Deployment Mechanism</div>
             <p>
-              Key analyses focused on ensuring the mechanism would survive launch loads and function reliably in space. This included evaluating
-              retention forces, spring sizing, and release timing to achieve consistent deployment velocities. Thermal and electrical considerations
-              were also addressed for the burn-wire system, ensuring reliable actuation after exposure to vibration and thermal vacuum environments.
+              Deployment relies on fishing-line retention loops and a two-stage burn-wire actuation sequence.
+              One burn event releases the doors, and a second releases the launch bars to eject the ChipSats.
+              This architecture allowed independent control of the two major deployment steps while keeping
+              the mechanism compact and mechanically simple.
             </p>
+            <ul>
+              <li>Fishing-line retention for doors and launch bars</li>
+              <li>Nichrome burn-wire activation through a dedicated circuit</li>
+              <li>Independent triggering of door and bar release</li>
+              <li>30 V high-signal interface requirement at apogee</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Manufacturing</div>
+            <div class="meta">Mechanical Design Decisions</div>
             <p>
-              The deployer was fabricated using a combination of machined components and rapid prototyping to enable fast iteration. Assembly 
-              required precise integration of mechanical components, springs, and the burn-wire system within a compact structure. Multiple 
-              iterations were produced to refine tolerances, improve reliability, and ensure consistent performance across builds.
+              Several design changes were driven by testing. Internal racks were transitioned to 3D-printed parts
+              to reduce manufacturing complexity and improve adaptability to future ChipSat geometry changes.
+              Delrin sliders were used at the launch-bar interfaces to reduce friction against the aluminum end walls,
+              and the launch bar and stopper geometry were iteratively resized to improve consistency.
             </p>
+            <ul>
+              <li>3D-printed racks replaced more difficult machined-slot concepts</li>
+              <li>Delrin sliders reduced sliding friction in the end-wall guides</li>
+              <li>Launch stopper height was adjusted to improve packing reliability</li>
+              <li>Peg-based routing reduced fishing-line entanglement during deployment</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Testing / Results</div>
+            <div class="meta">Testing & Results</div>
             <p>
-              DeSCENT was validated through functional and environmental testing, including repeated deployment tests to verify reliability 
-              and consistency. The burn-wire mechanism was characterized to ensure predictable actuation, and the system was tested under 
-              conditions representative of launch and space environments. Results demonstrated reliable ChipSat release and informed further 
-              design improvements for future iterations.
+              The deployer was repeatedly tested using a dedicated stand, substitute acrylic test chips, and a
+              30 V power supply to simulate the flight deployment signal. Testing was used not only to verify
+              operation, but also to identify failure modes and drive redesigns in tolerancing, routing, and
+              hardware interfaces.
             </p>
+            <ul>
+              <li>Repeated full deployment tests with loaded test chips</li>
+              <li>Video review used to diagnose deployment inconsistencies</li>
+              <li>Launch bars, sliders, and routing refined through iteration</li>
+              <li>Engineering development unit achieved full functional deployment tests</li>
+            </ul>
           </article>
+
+          <article class="card">
+            <div class="meta">Requirements & Performance</div>
+            <p>
+              The system was designed to satisfy JANUS and Blue Origin interface constraints while remaining well
+              below the overall payload mass limit. The development unit mass was approximately 4.48 kg
+              (about 10 lb), far below the 50 lb integrated mass requirement, and the closed deployer geometry
+              remained within the required payload envelope.
+            </p>
+            <ul>
+              <li>100 ChipSat capacity</li>
+              <li>2–4 m/s target ejection velocity</li>
+              <li>30 V deployment signal requirement</li>
+              <li>~4.48 kg deployer mass for the development unit</li>
+              <li>Designed for near-vacuum and low-temperature deployment conditions</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="meta">Outcome</div>
+            <p>
+              The project advanced the DeSCENT mission from legacy concepts to a fully functioning engineering
+              development unit capable of repeated full deployment demonstrations. The work established the
+              deployer architecture, validated the core release sequence, and generated the mechanical refinements
+              needed to move toward a flight-ready unit.
+            </p>
+            <ul>
+              <li>Built and validated a functional engineering development unit</li>
+              <li>Demonstrated controlled door and ChipSat release</li>
+              <li>Created a stronger path toward JANUS integration and future flight hardware</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>Hardware</span>
+          <h3>System and subsystem views.</h3>
+        </div>
+
+        <div class="three-up">
+          <div class="panel">
+            <img src="../images/descent-full-cad.jpg" alt="DeSCENT deployer CAD model" class="detail-image">
+            <div class="meta">Full Assembly</div>
+            <p>
+              Full deployer assembly showing the two-bay architecture, top doors, and compact external envelope.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/descent-burn-wire-circuit.jpg" alt="DeSCENT burn-wire circuit" class="detail-image">
+            <div class="meta">Burn-Wire Circuit</div>
+            <p>
+              Mounted deployment circuit used to trigger the nichrome burn wires for staged door and launch-bar release.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/descent-test-stand.jpg" alt="DeSCENT deployer test stand" class="detail-image">
+            <div class="meta">Testing Setup</div>
+            <p>
+              Dedicated stand developed to support repeatable assembly, loading, routing, and deployment testing.
+            </p>
+          </div>
         </div>
       </div>
     </section>
