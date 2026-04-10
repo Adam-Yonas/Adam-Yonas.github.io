@@ -540,3 +540,16 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+.button-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.button-link:hover {
+  background: rgba(255,255,255,0.15);
+}
