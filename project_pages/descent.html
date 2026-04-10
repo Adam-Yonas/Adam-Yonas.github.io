@@ -1,124 +1,238 @@
-<!-- ONLY showing sections that changed -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DeSCENT Deployer | Adam Yonas</title>
+  <meta name="description" content="DeSCENT ChipSat deployer project by Adam Yonas." />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
 
-<!-- ================= OVERVIEW ================= -->
-<div class="panel">
-  <div class="meta">Overview</div>
-  <p>
-    The DeSCENT deployer was designed to package, retain, and eject 100 ChipSats at apogee from the
-    JHU APL JANUS platform. The system uses a machined aluminum chassis with 3D-printed inserts,
-    spring-loaded launch bars, fishing-line retention, and a burn-wire circuit to execute a staged
-    deployment sequence: first opening the doors, then ejecting the ChipSats.
-  </p>
-  <ul class="clean">
-    <li>Designed to deploy 100 ChipSats at ~100 km apogee</li>
-    <li>Two internal bays holding 50 ChipSats each</li>
-    <li>Staged burn-wire triggered door and launch-bar release</li>
-    <li>Spring-driven ejection targeting ~4 m/s exit velocity</li>
-    <li>Integrated with the JHU APL JANUS payload platform</li>
-  </ul>
-</div>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/#top">Adam Yonas</a>
+      <div class="nav-links">
+        <a href="/#top">Home</a>
+      </div>
+    </div>
+  </nav>
 
-<!-- ================= ROLE ================= -->
-<div class="panel">
-  <div class="meta">My Role: Mechanical Lead (August 2022 - August 2023)</div>
-  <ul class="clean">
-    <li>Mechanical design and CAD for deployer structure and mechanisms</li>
-    <li>Development of staged deployment system (doors + launch bars)</li>
-    <li>Design of ChipSat packaging interfaces and tolerance-driven geometry</li>
-    <li>Iteration on low-friction interfaces, fishing-line routing, and retention strategy</li>
-    <li>Assembly, integration, and validation through repeated deployment testing</li>
-  </ul>
-</div>
+  <main>
 
-<!-- ================= ARCHITECTURE ================= -->
-<article class="card">
-  <div class="meta">Architecture</div>
-  <p>
-    The deployer uses a machined 6061-aluminum primary structure with 3D-printed internal racks to organize
-    and constrain ChipSat motion. The system is split into two bays, each containing 50 ChipSats, with
-    spring-loaded launch bars providing the ejection impulse. The design balances structural rigidity,
-    packaging density, and manufacturability for iterative development.
-  </p>
-  <ul>
-    <li>Machined aluminum baseplate, side walls, and door structure</li>
-    <li>PETG-CF printed racks enabling rapid iteration and geometry updates</li>
-    <li>Two-bay architecture with independent ChipSat rows</li>
-    <li>Geometry constrained to maintain ChipSat power-switch engagement</li>
-  </ul>
-</article>
+    <!-- ================= HEADER ================= -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>Project</span>
+          <h3>DeSCENT Deployer</h3>
+        </div>
 
-<!-- ================= DEPLOYMENT ================= -->
-<article class="card">
-  <div class="meta">Deployment Mechanism</div>
-  <p>
-    Deployment is executed through a staged, burn-wire actuated release system. Torsion-spring doors
-    are released first, followed by compression-driven launch bars that eject the ChipSats. High-strength
-    fishing line restrains both subsystems and is cut via nichrome burn wires triggered by a 30 V signal
-    from the JANUS platform.
-  </p>
-  <ul>
-    <li>Two-stage release: door opening followed by launch-bar ejection</li>
-    <li>Fishing-line retention using Dyneema for high strength and low mass</li>
-    <li>Nichrome burn-wire actuation for reliable release in vacuum conditions</li>
-    <li>Sequenced release architecture for controlled deployment</li>
-  </ul>
-</article>
+        <div class="panel">
+          <div class="meta">Space Systems Design Studio</div>
+          <p>
+            DeSCENT (Demonstration of Suborbital ChipSats Ejected from New Shepard Test Flight) is a
+            ChipSat deployment mission developed through Cornell’s Space Systems Design Studio in collaboration
+            with Johns Hopkins University Applied Physics Laboratory. The project centers on a two-bay deployer
+            designed to house and eject 100 ChipSats from the JANUS platform aboard Blue Origin New Shepard
+            for suborbital atmospheric sensing and reentry testing.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- ================= MECHANICAL ================= -->
-<article class="card">
-  <div class="meta">Mechanical Design Decisions</div>
-  <p>
-    Mechanical performance was driven by friction reduction, packaging constraints, and repeatability.
-    Sliding interfaces between launch bars and structure were optimized using Delrin contact surfaces
-    and controlled surface finishes to ensure consistent motion and ejection behavior.
-  </p>
-  <ul>
-    <li>Delrin sliders reduced friction against aluminum end-wall interfaces</li>
-    <li>Surface finishes controlled to improve sliding consistency</li>
-    <li>3D-printed racks enabled rapid geometry iteration and tolerance refinement</li>
-    <li>Fishing-line routing redesigned to prevent entanglement during release</li>
-  </ul>
-</article>
+    <!-- ================= HERO IMAGE ================= -->
+    <section>
+      <div class="container">
+        <div class="image-center">
+          <img src="../images/Descent Mission.png" alt="DeSCENT deployer" class="section-image">
+        </div>
+      </div>
+    </section>
 
-<!-- ================= TESTING ================= -->
-<article class="card">
-  <div class="meta">Testing & Results</div>
-  <p>
-    The deployer was validated through repeated full-system deployment tests using representative
-    test chips and a 30 V actuation signal. Testing identified failure modes in friction, routing,
-    and tolerancing, directly informing iterative design improvements.
-  </p>
-  <ul>
-    <li>Repeated full deployment tests with loaded surrogate ChipSats</li>
-    <li>Video analysis used to diagnose inconsistent release behavior</li>
-    <li>Iterative refinement of launch bars, sliders, and retention routing</li>
-    <li>Validated staged release sequence under realistic conditions</li>
-  </ul>
-</article>
+    <!-- ================= OVERVIEW + ROLE ================= -->
+    <section>
+      <div class="container about-grid">
 
-<!-- ================= PERFORMANCE ================= -->
-<article class="card">
-  <div class="meta">Requirements & Performance</div>
-  <p>
-    The deployer was designed to satisfy JANUS and Blue Origin interface constraints while remaining
-    well below payload mass limits. The mechanical system delivers a controlled spring-driven ejection
-    impulse to ensure safe separation from the vehicle at apogee.
-  </p>
-  <ul>
-    <li>100 ChipSat capacity across two deployment bays</li>
-    <li>~4 m/s ejection velocity driven by spring-loaded launch bars</li>
-    <li>~19.8 J stored spring energy per deployment row</li>
-    <li>~4.48 kg development unit mass (well below system limits)</li>
-    <li>Designed for vacuum, thermal, and launch-load environments</li>
-  </ul>
-</article>
+        <div class="panel">
+          <div class="meta">Overview</div>
+          <p>
+            The DeSCENT deployer was designed to package, retain, and eject 100 ChipSats at apogee from the
+            JHU APL JANUS platform. The system uses a machined aluminum chassis with 3D-printed inserts,
+            spring-loaded launch bars, fishing-line retention, and a burn-wire circuit to execute a staged
+            deployment sequence: first opening the doors, then ejecting the ChipSats.
+          </p>
+          <ul class="clean">
+            <li>100 ChipSat deployment at ~100 km apogee</li>
+            <li>Two internal bays with 50 ChipSats each</li>
+            <li>Staged burn-wire triggered deployment sequence</li>
+            <li>Spring-driven ejection targeting ~4 m/s velocity</li>
+            <li>Integrated with JHU APL JANUS payload platform</li>
+          </ul>
+        </div>
 
-<!-- ================= HARDWARE SPRING UPDATE ================= -->
-<div class="panel">
-  <img src="../images/Descent Spring.png" alt="DeSCENT deployment spring system" class="detail-image">
-  <div class="meta">Spring-Loaded Deployment System</div>
-  <p>
-    Preloaded compression springs store ~19.8 J of energy per row and drive the launch bars to achieve
-    ~4 m/s ChipSat ejection. The system was tuned for consistent release and minimal friction across both bays.
-  </p>
-</div>
+        <div class="panel">
+          <div class="meta">My Role: Mechanical Lead (Aug 2022 – Aug 2023)</div>
+          <ul class="clean">
+            <li>Mechanical design and CAD of deployer structure and mechanisms</li>
+            <li>Development of staged deployment system (doors + launch bars)</li>
+            <li>Design of ChipSat packaging interfaces and tolerance-driven geometry</li>
+            <li>Friction reduction and retention system optimization (Delrin + routing)</li>
+            <li>Assembly, integration, and iterative hardware validation</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= DETAILS ================= -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>Details</span>
+          <h3>Design, integration, and validation.</h3>
+        </div>
+
+        <div class="card-grid details-stack">
+
+          <!-- ARCHITECTURE -->
+          <article class="card">
+            <div class="meta">Architecture</div>
+            <p>
+              The deployer uses a machined 6061-aluminum primary structure with 3D-printed internal racks to organize
+              and constrain ChipSat motion. The system is split into two bays, each containing 50 ChipSats, with
+              spring-loaded launch bars providing the ejection impulse.
+            </p>
+            <ul>
+              <li>Machined aluminum baseplate, side walls, and door structure</li>
+              <li>PETG-CF printed racks enabling rapid iteration</li>
+              <li>Two-bay architecture with independent deployment rows</li>
+              <li>Geometry constrained to maintain ChipSat electrical interface contact</li>
+            </ul>
+          </article>
+
+          <!-- DEPLOYMENT -->
+          <article class="card">
+            <div class="meta">Deployment Mechanism</div>
+            <p>
+              Deployment is executed through a staged burn-wire actuation system. Torsion-spring doors release first,
+              followed by compression-driven launch bars that eject the ChipSats. Fishing line provides lightweight
+              retention and is cut using nichrome burn wires triggered by a 30 V signal.
+            </p>
+            <ul>
+              <li>Two-stage release: doors → launch bars</li>
+              <li>Fishing-line (Dyneema) retention system</li>
+              <li>Nichrome burn-wire actuation</li>
+              <li>Sequenced deployment for controlled release</li>
+            </ul>
+          </article>
+
+          <!-- MECHANICAL DESIGN -->
+          <article class="card">
+            <div class="meta">Mechanical Design Decisions</div>
+            <p>
+              Mechanical performance was driven by friction reduction, packaging constraints, and repeatability.
+              Sliding interfaces were optimized using Delrin contact surfaces and controlled finishes to ensure
+              consistent deployment behavior across both bays.
+            </p>
+            <ul>
+              <li>Delrin sliders reduced friction against aluminum interfaces</li>
+              <li>Surface finish control improved sliding consistency</li>
+              <li>3D-printed racks enabled rapid geometry iteration</li>
+              <li>Routing redesign eliminated fishing-line entanglement</li>
+            </ul>
+          </article>
+
+          <!-- TESTING -->
+          <article class="card">
+            <div class="meta">Testing & Results</div>
+            <p>
+              The deployer was validated through repeated full-system deployment tests using representative
+              test chips and a 30 V actuation signal. Testing identified failure modes in friction, routing,
+              and tolerancing, directly informing iterative design improvements.
+            </p>
+            <ul>
+              <li>Repeated full deployment tests with loaded test chips</li>
+              <li>Video analysis used to diagnose inconsistencies</li>
+              <li>Iterative refinement of sliders, routing, and tolerances</li>
+              <li>Validated staged deployment sequence</li>
+            </ul>
+          </article>
+
+          <!-- PERFORMANCE -->
+          <article class="card">
+            <div class="meta">Requirements & Performance</div>
+            <p>
+              The deployer was designed to satisfy JANUS and Blue Origin constraints while remaining well below
+              payload mass limits. The mechanical system delivers controlled spring-driven energy to ensure
+              safe and repeatable ChipSat separation.
+            </p>
+            <ul>
+              <li>100 ChipSat capacity</li>
+              <li>~4 m/s ejection velocity</li>
+              <li>~19.8 J spring energy per row</li>
+              <li>~4.48 kg development unit mass</li>
+              <li>Designed for vacuum and launch-load environments</li>
+            </ul>
+          </article>
+
+          <!-- OUTCOME -->
+          <article class="card">
+            <div class="meta">Outcome</div>
+            <p>
+              The project progressed from concept to a fully functional engineering development unit capable
+              of repeatable staged deployment. Mechanical refinements enabled reliable release behavior and
+              established a foundation for flight-ready system development.
+            </p>
+            <ul>
+              <li>Built and validated full deployer system</li>
+              <li>Demonstrated consistent staged deployment</li>
+              <li>Enabled transition toward flight-integrated hardware</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HARDWARE ================= -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>Hardware</span>
+          <h3>System and subsystem views.</h3>
+        </div>
+
+        <div class="three-up">
+
+          <div class="panel">
+            <img src="../images/Descent Deployer.png" class="detail-image">
+            <div class="meta">Full Assembly</div>
+            <p>
+              Two-bay deployer structure with integrated doors, launch bars, and compact external envelope.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/Burn Wire Descent.png" class="detail-image">
+            <div class="meta">Burn-Wire Circuit</div>
+            <p>
+              Deployment circuit used to trigger nichrome burn wires for staged release.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/Descent Spring.png" class="detail-image">
+            <div class="meta">Deployment Spring System</div>
+            <p>
+              Compression spring system storing ~19.8 J per row to achieve ~4 m/s ChipSat ejection.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
