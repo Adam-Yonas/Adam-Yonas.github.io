@@ -18,6 +18,8 @@
   </nav>
 
   <main>
+
+    <!-- HEADER -->
     <section>
       <div class="container">
         <div class="section-title">
@@ -28,91 +30,154 @@
         <div class="panel">
           <div class="meta">Cornell Mars Rover</div>
           <p>
-            The Cornell Mars Rover project is a student-led effort focused on designing and building a competition rover 
-            capable of traversing challenging terrain and performing mission-relevant tasks. The system is developed for 
-            the University Rover Challenge (URC), with an emphasis on mobility, durability, and reliable subsystem integration. 
-            The project provides hands-on experience in full-system engineering, from mechanical design to field testing in realistic 
-            off-road environments.
+            The Cornell Mars Rover is a student-built system designed for the University Rover Challenge (URC),
+            focused on reliable traversal across rough, uneven terrain. The rover emphasizes mobility, durability,
+            and rapid iteration under real-world field conditions.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- IMAGE -->
     <section>
-      <div class="container about-grid">
+      <div class="container">
+        <div class="image-center">
+          <img src="../images/mars-rover.png" alt="Mars Rover" class="section-image">
+        </div>
+      </div>
+    </section>
+
+    <!-- OVERVIEW + ROLE -->
+    <section>
+      <div class="container two-up">
+
         <div class="panel">
           <div class="meta">Overview</div>
           <p>
-            The Drives and Suspension subteam of the Cornell Mars Rover project focuses on designing the rover’s mobility system to 
-            ensure reliable traversal over rough, uneven terrain. This includes developing the drivetrain, wheel interfaces, and suspension 
-            architecture to maximize stability, traction, and load distribution. My work centered on adapting the JPL-inspired rocker-bogie 
-            suspension for our rover while also developing an alternative bevel gear-based drivetrain configuration. This involved reworking 
-            the suspension geometry for our specific constraints, integrating drivetrain components within the rocker-bogie system, and designing 
-            a bevel gear solution to improve torque transmission and packaging within the wheel assemblies. The goal was to create a robust, modular 
-            mobility system that could handle real terrain conditions while remaining manufacturable and serviceable for rapid iteration and competition use.
+            I worked on the Drives and Suspension subteam, focusing on rover mobility through suspension geometry
+            and drivetrain integration. My work centered on adapting a JPL-style rocker-bogie suspension to our rover
+            while developing an alternative bevel gear drivetrain to improve torque transmission and packaging within
+            constrained wheel assemblies.
           </p>
+          <ul class="clean">
+            <li>Rocker-bogie suspension adapted for competition rover constraints</li>
+            <li>Bevel gear drivetrain concept for improved torque routing</li>
+            <li>Integrated suspension and drivetrain within tight packaging limits</li>
+            <li>Designed for uneven terrain traversal and load distribution</li>
+          </ul>
         </div>
 
         <div class="panel">
           <div class="meta">My Role</div>
           <ul class="clean">
-            <li>Suspension CAD design</li>
-            <li>FEA and hand calculations</li>
-            <li>CNC and manual machining support</li>
-            <li>Assembly and integration</li>
+            <li>Suspension CAD design and geometry development</li>
+            <li>Integration of drivetrain components within rocker-bogie system</li>
+            <li>Development of bevel gear drivetrain architecture</li>
+            <li>Structural analysis (FEA + hand calculations)</li>
+            <li>Manufacturing support and mechanical assembly</li>
           </ul>
         </div>
+
       </div>
     </section>
 
+    <!-- DETAILS -->
     <section>
       <div class="container">
         <div class="section-title">
           <span>Details</span>
-          <h3>Mobility design, structural analysis, and fabrication.</h3>
+          <h3>Mobility system design and implementation.</h3>
         </div>
 
         <div class="card-grid details-stack">
+
           <article class="card">
-            <div class="meta">Design</div>
+            <div class="meta">Suspension Architecture</div>
             <p>
-              The rover is built around a rocker-bogie suspension system to enable stable traversal over uneven terrain while maintaining wheel 
-              contact and load distribution. Mechanical design focused on optimizing the chassis, suspension geometry, and drivetrain to balance 
-              strength, weight, and mobility. Components were designed for modularity and serviceability, allowing rapid iteration and repair during 
-              testing and competition.
+              The rover uses a rocker-bogie suspension to maintain wheel contact across uneven terrain while
+              distributing loads across all six wheels. The system was adapted from JPL architectures and modified
+              to meet competition constraints, including weight limits, manufacturability, and packaging.
             </p>
+            <ul>
+              <li>Rocker-bogie geometry tuned for stability and articulation</li>
+              <li>Maintained wheel-ground contact over large obstacles</li>
+              <li>Balanced load distribution across all wheels</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="meta">Drivetrain Design</div>
+            <p>
+              In addition to standard drivetrain integration, I developed a bevel gear-based drivetrain concept to
+              improve torque transmission and simplify packaging within wheel assemblies. This approach enabled
+              more compact motor placement and cleaner power routing.
+            </p>
+            <ul>
+              <li>Bevel gear drivetrain for torque redirection into wheel hubs</li>
+              <li>Improved packaging within constrained suspension geometry</li>
+              <li>Reduced complexity of shaft routing</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="meta">Integration Challenges</div>
+            <p>
+              A major challenge was integrating drivetrain components within the moving suspension system while
+              maintaining alignment and minimizing losses. This required careful coordination between suspension
+              geometry and drivetrain layout.
+            </p>
+            <ul>
+              <li>Aligned drivetrain within moving rocker-bogie joints</li>
+              <li>Maintained tolerances across dynamic interfaces</li>
+              <li>Balanced robustness with serviceability</li>
+            </ul>
           </article>
 
           <article class="card">
             <div class="meta">Analysis</div>
             <p>
-              Design decisions were supported by structural and kinematic analysis to ensure the rover could withstand terrain-induced loads 
-              and operate effectively under varying conditions. This included evaluating suspension performance, load distribution across wheels, 
-              and drivetrain torque requirements. Trade studies were conducted to optimize wheel design, gear ratios, and material selection for 
-              durability and efficiency.
+              Structural and kinematic analyses were used to validate suspension performance under terrain-induced
+              loads. This included evaluating stress in suspension members and ensuring drivetrain components could
+              handle expected torque requirements.
             </p>
+            <ul>
+              <li>FEA on suspension components</li>
+              <li>Hand calculations for load paths and torque requirements</li>
+              <li>Trade studies on drivetrain configurations</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Manufacturing</div>
+            <div class="meta">Manufacturing & Assembly</div>
             <p>
-              The rover was fabricated using a combination of machined components and off-the-shelf hardware, with a focus on manufacturability 
-              and rapid iteration. Assembly required integration of structural components, drivetrain elements, and suspension systems, with attention 
-              to alignment and tolerance control. Iterative builds were used to refine performance and address issues identified during testing.
+              Hardware was fabricated and assembled with a focus on rapid iteration. Components were designed for
+              manufacturability and ease of replacement during testing and competition.
             </p>
+            <ul>
+              <li>Machining and fabrication support</li>
+              <li>Mechanical assembly of suspension and drivetrain</li>
+              <li>Iterative builds based on testing feedback</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Testing / Results</div>
+            <div class="meta">Outcome</div>
             <p>
-              The rover was fabricated using a combination of machined components and off-the-shelf hardware, with a focus on manufacturability and 
-              rapid iteration. Assembly required integration of structural components, drivetrain elements, and suspension systems, with attention to 
-              alignment and tolerance control. Iterative builds were used to refine performance and address issues identified during testing.
+              The resulting system provided a robust mobility platform capable of handling uneven terrain while
+              maintaining stability and traction. The integration of drivetrain and suspension improved overall
+              rover performance and informed future design iterations.
             </p>
+            <ul>
+              <li>Functional rocker-bogie mobility system</li>
+              <li>Improved drivetrain packaging and torque delivery</li>
+              <li>Validated through field testing and iteration</li>
+            </ul>
           </article>
+
         </div>
       </div>
     </section>
+
   </main>
 </body>
 </html>
