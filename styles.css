@@ -559,9 +559,3 @@ footer {
   text-decoration: none;
 }
 
-.card p,
-.card li,
-.panel p,
-.panel li {
-  color: var(--muted);
-}
