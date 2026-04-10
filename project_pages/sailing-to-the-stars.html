@@ -28,41 +28,50 @@
         <div class="panel">
           <div class="meta">Space Systems Design Studio</div>
           <p>
-            The Space Systems Design Studio (SSDS) at Cornell, founded by Professor Mason Peck, is a student-led 
-            spacecraft development group focused on rapid, hands-on mission design and real flight hardware. 
-            The team operates with an emphasis on building, testing, and launching small satellites and novel space systems, 
-            giving students direct experience with end-to-end spacecraft development. Through projects ranging from CubeSats 
-            to deployable systems and distributed ChipSat architectures, SSDS advances low-cost, scalable approaches to space 
-            exploration while maintaining a strong focus on flight validation, integration, and operating within real mission 
-            constraints such as ISS deployment and rideshare launches.          
+            Sailing to the Stars is an ISS-based light sail deployment experiment developed through Cornell’s
+            Space Systems Design Studio (SSDS). The mission was built to evaluate free-flying light sail deployment
+            in microgravity using a modular architecture with a reusable avionics cube and interchangeable payload
+            sections, enabling repeated deployment testing across multiple hardware variants.
           </p>
         </div>
       </div>
     </section>
 
-  <div class="image-center">
-    <img src="../images/Sailing to the Stars Team Photo.jpg" alt="Sailing to the Stars" class="section-image">
-  </div>
-        
+    <section>
+      <div class="container">
+        <div class="image-center">
+          <img src="../images/Sailing to the Stars Team Photo.jpg" alt="Sailing to the Stars team" class="section-image">
+        </div>
+      </div>
+    </section>
+
     <section>
       <div class="container about-grid">
         <div class="panel">
           <div class="meta">Overview</div>
           <p>
-            Sailing to the Stars is a solar sail development effort within Cornell’s Space Systems Design Studio (SSDS), focused on designing, 
-            packaging, and deploying compact light sail systems from CubeSat platforms. The project aims to demonstrate low-cost, propellant-free 
-            propulsion by leveraging solar radiation pressure, while advancing deployable structures that can be reliably stowed within highly 
-            constrained volumes and deployed on orbit.
+            The project compares two deployer architectures — single-door and double-door payload sections —
+            across six planned ISS deployment tests. On-orbit video and IMU data are used to study post-deployment
+            sail and deployer stability, with the goal of informing future light sail spacecraft and deployment
+            system designs.
           </p>
+          <ul class="clean">
+            <li>ISS microgravity light sail deployment experiment</li>
+            <li>Six deployments using two deployer architectures</li>
+            <li>Reusable avionics cube with swappable payload sections</li>
+            <li>Video and IMU data collected for stability analysis</li>
+            <li>Designed to guide future light sail mission hardware</li>
+          </ul>
         </div>
 
         <div class="panel">
-          <div class="meta">My Role</div>
+          <div class="meta">My Role — Mechanical Lead</div>
           <ul class="clean">
-            <li>Mechanical design and CAD</li>
-            <li>Assembly and integration</li>
-            <li>Prototype iteration</li>
-            <li>Testing and validation support</li>
+            <li>Led mechanical design of the deployer hardware</li>
+            <li>Owned CAD, packaging, and payload integration</li>
+            <li>Drove single-door vs double-door architecture trade studies</li>
+            <li>Supported sail fabrication, assembly, and subsystem integration</li>
+            <li>Worked with avionics on full deployment testing and validation</li>
           </ul>
         </div>
       </div>
@@ -72,50 +81,107 @@
       <div class="container">
         <div class="section-title">
           <span>Details</span>
-          <h3>Design, integration, and results.</h3>
+          <h3>Design, integration, and validation.</h3>
         </div>
 
         <div class="card-grid details-stack">
           <article class="card">
-            <div class="meta">Design</div>
+            <div class="meta">Architecture & Design Trade</div>
             <p>
-              The system is centered around a deployable light sail integrated within a CubeSat form factor. The sail is packaged using a 
-              compact folding architecture and deployed using a controlled release mechanism, with design iterations exploring single-door 
-              and double-door configurations to improve deployment reliability. Structural design focuses on maintaining stiffness and 
-              integrity during deployment while minimizing mass, and incorporates materials such as thin-film membranes and deployable 
-              booms or frames to achieve the required surface area.
+              The mechanical system was built around a modular separation between a reusable avionics cube and
+              disposable payload sections. Two payload architectures were developed to evaluate deployment behavior:
+              a single-door design derived from prior Cornell sail deployment work, and a double-door concept intended
+              to reduce tip-off by balancing door opening forces.
             </p>
+            <ul>
+              <li><strong>Single-door:</strong> spring-latched release with fishing-line retention</li>
+              <li><strong>Double-door:</strong> opposed door opening to reduce induced angular momentum</li>
+              <li>Common avionics interface across all payload variants</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Analysis</div>
+            <div class="meta">Mechanical System</div>
             <p>
-              Design trade studies were conducted to evaluate deployment strategies, packaging efficiency, and reliability under spaceflight 
-              conditions. This included assessing hinge and door mechanisms, retention systems, and actuation methods to ensure consistent deployment. 
-              Consideration was also given to the effects of solar radiation pressure on the deployed sail, as well as structural behavior during and 
-              after deployment to ensure stability and avoid entanglement or incomplete deployment.
+              Each payload section integrated the deployment hardware needed for controlled sail release, including
+              filament actuators, limit switches, safety pins, and battery pack interfaces. The folded sail was
+              packaged within a compact CubeSat-scale structure and released by cutting a restrained fishing line.
             </p>
+            <ul>
+              <li>Filament actuator-triggered release mechanism</li>
+              <li>Mechanical and electrical safety pin interface</li>
+              <li>Limit switch integration for safe operation</li>
+              <li>Compact sail folding and deployer packaging</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Manufacturing</div>
+            <div class="meta">Avionics Integration</div>
             <p>
-              Design trade studies were conducted to evaluate deployment strategies, packaging efficiency, and reliability under spaceflight conditions. 
-              This included assessing hinge and door mechanisms, retention systems, and actuation methods to ensure consistent deployment. Consideration 
-              was also given to the effects of solar radiation pressure on the deployed sail, as well as structural behavior during and after deployment 
-              to ensure stability and avoid entanglement or incomplete deployment.
+              The reusable avionics section housed the PCB and hard-drive reaction wheel inside a common outer shell.
+              Alignment features and keyed interfaces ensured repeatable mating between the avionics cube and each
+              payload section, while also preventing connector misalignment during assembly.
             </p>
+            <ul>
+              <li>Reusable avionics module shared across deployment tests</li>
+              <li>Integrated PCB holder and electrical connector alignment</li>
+              <li>Reaction wheel packaged within the avionics shell</li>
+              <li>Mechanical interface designed for repeatable payload swapping</li>
+            </ul>
           </article>
 
           <article class="card">
-            <div class="meta">Testing / Results</div>
+            <div class="meta">Testing & Results</div>
             <p>
-              The system was tested through repeated deployment trials to validate reliability and consistency of the sail release mechanism. Testing focused 
-              on ensuring complete and clean deployment, with particular attention to failure modes such as snagging, incomplete extension, or asymmetrical 
-              deployment. Results from these tests informed design refinements and contributed to ongoing SSDS efforts to mature solar sail technologies for 
-              future flight demonstrations.
+              The deployers were validated through repeated mechanical and full deployment tests with integrated
+              avionics, battery packs, and folded sails. Testing focused on actuator reliability, safety pin power
+              cutoff, door opening performance, and clean sail release, with results feeding directly into flight
+              readiness for ISS operations.
             </p>
+            <ul>
+              <li>Repeated full-system deployment tests</li>
+              <li>Validation of filament actuator cut reliability</li>
+              <li>Assessment of deployment symmetry and failure modes</li>
+              <li>Flight-like hardware assembly and integration checks</li>
+            </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <span>Hardware</span>
+          <h3>Exploded system views.</h3>
+        </div>
+
+        <div class="three-up">
+          <div class="panel">
+            <img src="../images/Single Door Deployer.png" alt="Single-door payload deployer exploded view" class="detail-image">
+            <div class="meta">Single-Door Payload</div>
+            <p>
+              Spring-latched payload section with fishing-line retention, filament actuator release, limit switch,
+              and safety pin interface.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/Double Door Deployer.png" alt="Double-door payload deployer exploded view" class="detail-image">
+            <div class="meta">Double-Door Payload</div>
+            <p>
+              Dual-door payload section designed to open in opposite directions and reduce tip-off during sail deployment.
+            </p>
+          </div>
+
+          <div class="panel">
+            <img src="../images/Spin Stabalizer.png" alt="Reusable avionics section exploded view" class="detail-image">
+            <div class="meta">Reusable Avionics Section</div>
+            <p>
+              Common avionics cube containing the PCB, connector interface, and hard-drive reaction wheel used across
+              multiple payload deployments.
+            </p>
+          </div>
         </div>
       </div>
     </section>
