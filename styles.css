@@ -377,11 +377,6 @@ main section {
   padding: 24px 26px;
 }
 
-.card a.project-link {
-  text-decoration: none;
-  color: #4ea3ff;
-}
-
 .card a.project-link:hover {
   color: #82c4ff;
 }
@@ -589,4 +584,63 @@ footer {
 .button-link:focus {
   color: white;
   text-decoration: none;
+}
+
+/* makes projects links*/
+/* ================= PROJECT CARDS (CLICKABLE) ================= */
+
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card {
+  position: relative;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.project-card h4 {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card-cta {
+  margin-top: 18px;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover / Focus */
+
+.project-card-link:hover .project-card,
+.project-card-link:focus-visible .project-card {
+  transform: translateY(-4px);
+  border-color: rgba(143, 200, 255, 0.28);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 29, 63, 0.98) 0%,
+    rgba(11, 21, 50, 0.94) 100%
+  );
+}
+
+.project-card-link:hover .project-card h4,
+.project-card-link:focus-visible .project-card h4 {
+  color: var(--accent-2);
+  transform: translateX(2px);
+}
+
+.project-card-link:hover .project-card-cta,
+.project-card-link:focus-visible .project-card-cta {
+  opacity: 1;
+  transform: translateX(4px);
 }
