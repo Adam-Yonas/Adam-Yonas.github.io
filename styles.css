@@ -661,11 +661,26 @@ footer {
   position: absolute;
   inset: 0;
   z-index: 2;
+  text-decoration: none;
+  color: inherit;
 }
 
 .publication-card > *:not(.publication-card-link) {
   position: relative;
   z-index: 3;
+}
+
+.publication-card h4 {
+  transition: color 0.2s ease;
+}
+
+.publication-card-cta {
+  margin-top: 18px;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .publication-card:hover {
@@ -685,7 +700,7 @@ footer {
   color: var(--accent-2);
 }
 
-.publication-card:hover .project-card-cta {
+.publication-card:hover .publication-card-cta {
   opacity: 1;
   transform: translateX(4px);
 }
