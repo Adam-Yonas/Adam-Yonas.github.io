@@ -599,29 +599,17 @@ footer {
     background 0.2s ease;
 }
 
-/* invisible full-card link */
 .project-card-link {
   position: absolute;
   inset: 0;
-  z-index: 5;          /* ABOVE everything */
+  z-index: 10;
+  display: block;
 }
 
-.project-card > * {
-  position: relative;
-  z-index: 1;          /* BELOW the link */
+.project-card > *:not(.project-card-link) {
+  pointer-events: none;
 }
 
-/* CTA */
-.project-card-cta {
-  margin-top: 18px;
-  color: var(--accent-2);
-  font-weight: 600;
-  font-size: 0.95rem;
-  opacity: 0.85;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-/* hover effects */
 .project-card:hover {
   transform: translateY(-4px);
   border-color: rgba(143, 200, 255, 0.28);
@@ -637,6 +625,15 @@ footer {
 
 .project-card:hover h4 {
   color: var(--accent-2);
+}
+
+.project-card-cta {
+  margin-top: 18px;
+  color: var(--accent-2);
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .project-card:hover .project-card-cta {
