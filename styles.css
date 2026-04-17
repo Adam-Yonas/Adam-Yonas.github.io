@@ -643,27 +643,22 @@ footer {
 
 /* ================= PUBLICATION CARDS (CLICKABLE) ================= */
 
+/* ================= PUBLICATION CLICK FIX ================= */
+
 .publication-card {
   position: relative;
   cursor: pointer;
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease,
-    box-shadow 0.2s ease,
-    background 0.2s ease;
 }
 
 .publication-card-link {
   position: absolute;
   inset: 0;
-  z-index: 2;
-  text-decoration: none;
-  color: inherit;
+  z-index: 10;
+  display: block;
 }
 
 .publication-card > *:not(.publication-card-link) {
-  position: relative;
-  z-index: 3;
+  pointer-events: none;
 }
 
 .publication-card h4 {
