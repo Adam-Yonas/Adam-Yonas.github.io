@@ -272,32 +272,33 @@ main section {
 .chip-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.4rem;
 }
 
 .chip {
   display: inline-flex;
   width: fit-content;
   align-items: center;
-  min-height: 42px;
-  padding: 0 18px;
+  min-height: 36px;
+  padding: 0 14px;
   border-radius: 999px;
   background: rgba(255,255,255,0.05);
   color: var(--text);
   border: 1px solid rgba(255,255,255,0.09);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
+  line-height: 1.2;
 }
 
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 0.85rem;
 }
 
 .skill-group {
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.45rem;
 }
 
 .skill-label {
@@ -306,8 +307,11 @@ main section {
 
 .chip.category,
 .chip.main {
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   background: rgba(120, 180, 255, 0.14);
   color: var(--accent-2);
@@ -315,20 +319,31 @@ main section {
 }
 
 .chip.degree {
+  min-height: 38px;
+  padding: 0 16px;
   background: rgba(159, 255, 200, 0.1);
   color: var(--accent);
   border: 1px solid rgba(159, 255, 200, 0.22);
   font-weight: 600;
+  font-size: 0.82rem;
 }
 
 .coursework {
-  margin-top: 0.7rem;
-  padding-top: 0.7rem;
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
   border-top: 1px solid rgba(255,255,255,0.06);
 }
 
+.coursework .chips {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.4rem;
+}
+
 .coursework .chip {
-  font-size: 0.88rem;
+  min-height: 34px;
+  padding: 0 12px;
+  font-size: 0.82rem;
   color: var(--muted);
 }
 
@@ -428,6 +443,19 @@ footer {
   opacity: 0.95;
 }
 
+@media (max-width: 980px) {
+  .hero-grid,
+  .about-grid,
+  .contact-grid,
+  .two-up {
+    grid-template-columns: 1fr;
+  }
+
+  .three-up {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 700px) {
   .company-card {
     grid-template-columns: 1fr;
@@ -461,6 +489,14 @@ footer {
     font-size: clamp(2.3rem, 10vw, 3.8rem);
   }
 
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
   .section-title h3 {
     font-size: clamp(1.8rem, 8vw, 2.8rem);
   }
@@ -481,6 +517,10 @@ footer {
   .btn {
     width: 100%;
   }
+
+  .coursework .chips {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*makes subpages stack vertically*/
@@ -492,12 +532,6 @@ footer {
 
 .details-stack {
   grid-template-columns: 1fr;
-}
-
-@media (max-width: 980px) {
-  .two-up {
-    grid-template-columns: 1fr;
-  }
 }
 
 /*controls image size in subpages*/
@@ -539,12 +573,6 @@ footer {
   line-height: 1.5;
 }
 
-@media (max-width: 980px) {
-  .three-up {
-    grid-template-columns: 1fr;
-  }
-}
-
 .button-link {
   display: inline-block;
   padding: 8px 16px;
@@ -561,57 +589,4 @@ footer {
 .button-link:focus {
   color: white;
   text-decoration: none;
-}
-
-/*shrink the skills and education*/
-
-/* tighter chips + less vertical space */
-.skills {
-  gap: 0.85rem;
-}
-
-.skill-group {
-  gap: 0.45rem;
-}
-
-.chips,
-.subchips,
-.chip-row {
-  gap: 0.4rem;
-}
-
-.chip {
-  min-height: 36px;
-  padding: 0 14px;
-  font-size: 0.88rem;
-}
-
-.chip.category,
-.chip.main {
-  min-height: 38px;
-  padding: 0 16px;
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-}
-
-.chip.degree {
-  min-height: 38px;
-  padding: 0 16px;
-  font-size: 0.82rem;
-}
-
-.coursework {
-  margin-top: 0.45rem;
-  padding-top: 0.45rem;
-}
-
-.coursework .chip {
-  min-height: 34px;
-  padding: 0 12px;
-  font-size: 0.82rem;
-}
-
-/* slightly tighter panel padding for those sections */
-.panel {
-  padding: 22px 24px;
 }
