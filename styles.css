@@ -671,7 +671,7 @@ footer {
 }
 
 .publication-card h4 {
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .publication-card-cta {
@@ -698,6 +698,7 @@ footer {
 
 .publication-card:hover h4 {
   color: var(--accent-2);
+  transform: translateX(2px);
 }
 
 .publication-card:hover .publication-card-cta {
