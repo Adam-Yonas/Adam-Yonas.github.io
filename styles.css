@@ -562,3 +562,56 @@ footer {
   color: white;
   text-decoration: none;
 }
+
+/*shrink the skills and education*/
+
+/* tighter chips + less vertical space */
+.skills {
+  gap: 0.85rem;
+}
+
+.skill-group {
+  gap: 0.45rem;
+}
+
+.chips,
+.subchips,
+.chip-row {
+  gap: 0.4rem;
+}
+
+.chip {
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 0.88rem;
+}
+
+.chip.category,
+.chip.main {
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.chip.degree {
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: 0.82rem;
+}
+
+.coursework {
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
+}
+
+.coursework .chip {
+  min-height: 34px;
+  padding: 0 12px;
+  font-size: 0.82rem;
+}
+
+/* slightly tighter panel padding for those sections */
+.panel {
+  padding: 22px 24px;
+}
