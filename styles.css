@@ -603,13 +603,12 @@ footer {
 .project-card-link {
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 5;          /* ABOVE everything */
 }
 
-/* keep text ABOVE link so it doesn't become styled like a link */
-.project-card > *:not(.project-card-link) {
+.project-card > * {
   position: relative;
-  z-index: 3;
+  z-index: 1;          /* BELOW the link */
 }
 
 /* CTA */
